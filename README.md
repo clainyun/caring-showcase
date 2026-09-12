@@ -21,7 +21,9 @@
 <br/>
 
 <p align="center">
-  <img src="./assets/caring-banner.png" alt="Caring Banner" width="950"/>
+  <img src="./assets/caring-banner.png"
+       alt="Caring Banner"
+       width="950"/>
 </p>
 
 <br/>
@@ -30,18 +32,18 @@
 
 | **프로젝트 수상 2회** | **프로그램 저작물 2건** | **SW자산뱅크 등재** | **4인 팀 · 팀장** |
 |:---:|:---:|:---:|:---:|
-| 학술제 2등 · 창의설계경진대회 인기상 | 서비스 · AI 기능 | ASSET_0015923 | Backend · PO/PM |
+| 학술제 2등 · 인기상(4등) | 서비스 · AI 기능 | `ASSET_0015923` | Backend · PO/PM |
 
 > ### 💡 “요구사항은 상태·권한·인터페이스·완료 기준으로 구체화되어야 한다고 생각했습니다.”
 >
-> 실제 요양기관의 업무 절차와 불편을 확인하고,  
+> 실제 요양기관을 방문해 업무 절차와 불편을 확인하고,  
 > 이를 **예약 상태·역할별 권한·검색 조건·데이터 구조·검증 기준**으로 구체화했습니다.
 
 ### 👩‍💻 프로젝트 한눈에 보기
 
 | 항목 | 내용 |
 |---|---|
-| **프로젝트** | Caring · 맞춤형 요양기관 탐색·추천 플랫폼 |
+| **프로젝트** | Caring · 생활복지형 어르신 맞춤 케어 플랫폼 |
 | **개발 기간** | 2025.09 ~ 2025.12 |
 | **팀** | 4인 |
 | **역할** | Team Lead · Backend · PO/PM |
@@ -52,7 +54,7 @@
 | **AI** | [caring-ai](https://github.com/Caring-Team/caring-ai) |
 
 > ℹ️ 이 저장소는 채용 포트폴리오용 개인 Showcase입니다.  
-> 프로젝트 전체 구현과 개인 역할을 구분하여 작성했습니다.
+> 프로젝트 전체 기술과 개인 역할을 구분하여 작성했습니다.
 
 ---
 
@@ -60,7 +62,7 @@
 
 1. [프로젝트 소개](#1-프로젝트-소개-)
 2. [서비스 시연](#2-서비스-시연-)
-3. [현장 요구사항에서 시스템 설계까지](#3-현장-요구사항에서-시스템-설계까지-)
+3. [현장에서 요구사항을 찾다](#3-현장에서-요구사항을-찾다-)
 4. [담당 역할 및 협업](#4-담당-역할-및-협업-)
 5. [시스템 아키텍처](#5-시스템-아키텍처-)
 6. [핵심 설계](#6-핵심-설계-)
@@ -111,10 +113,12 @@ flowchart LR
 ### 🔎 기관 검색 · 조건 필터
 
 기관명뿐 아니라 기관 유형, 전문 분야, 위치, 거리, 가격 등
-여러 조건을 조합해 사용자의 상황에 맞는 기관을 탐색할 수 있습니다.
+여러 조건을 조합해 상황에 맞는 기관을 탐색할 수 있습니다.
 
 <p align="center">
-  <img src="./gif/institution-search.gif" alt="기관 검색" width="780"/>
+  <img src="./gif/institution-search.gif"
+       alt="기관 검색"
+       width="780"/>
 </p>
 
 - 기관명 및 기관 유형 검색
@@ -131,7 +135,9 @@ flowchart LR
 가능한 날짜와 시간대를 확인해 예약까지 이어갈 수 있습니다.
 
 <p align="center">
-  <img src="./gif/chat-reservation.gif" alt="상담 및 예약" width="780"/>
+  <img src="./gif/chat-reservation.gif"
+       alt="상담 및 예약"
+       width="780"/>
 </p>
 
 - 기관 담당자와 상담 채팅
@@ -139,7 +145,7 @@ flowchart LR
 - 예약 가능한 날짜 및 시간 확인
 - 예약 진행 상태 확인
 
-> 상담 채팅의 현재 구현은 **Server-side Long Polling**입니다.
+> 상담 채팅의 최종 구현은 **Long Polling** 방식입니다.
 
 <br/>
 
@@ -149,7 +155,9 @@ flowchart LR
 추천 기관과 추천 사유, 핵심 키워드를 제공합니다.
 
 <p align="center">
-  <img src="./gif/review-ai-recommendation.gif" alt="AI 기관 추천" width="780"/>
+  <img src="./gif/review-ai-recommendation.gif"
+       alt="AI 기관 추천"
+       width="780"/>
 </p>
 
 - 사용자·어르신 특성 기반 기관 추천
@@ -165,7 +173,9 @@ flowchart LR
 요일·시간대별 예약 상품과 운영 가능 시간을 관리합니다.
 
 <p align="center">
-  <img src="./gif/admin-reservation.gif" alt="기관 예약 관리" width="780"/>
+  <img src="./gif/admin-reservation.gif"
+       alt="기관 예약 관리"
+       width="780"/>
 </p>
 
 - 예약 요청 및 상태 조회
@@ -181,7 +191,9 @@ flowchart LR
 관리자 웹에서 함께 관리합니다.
 
 <p align="center">
-  <img src="./gif/admin-management.gif" alt="기관 운영 관리" width="780"/>
+  <img src="./gif/admin-management.gif"
+       alt="기관 운영 관리"
+       width="780"/>
 </p>
 
 - 기관 직원 및 권한 관리
@@ -191,28 +203,32 @@ flowchart LR
 
 ---
 
-## 3. 현장 요구사항에서 시스템 설계까지 📝
+## 3. 현장에서 요구사항을 찾다 🏥
 
-### 실제 기관의 업무 흐름부터 확인했습니다
+### 실제 요양기관의 업무 흐름부터 확인했습니다
 
-서비스를 설계하기 전에 실제 요양기관을 방문해
-기관 관리자와 상담·예약·입소 가능 여부·리뷰 관리 등
-현장에서 이루어지는 업무를 확인했습니다.
+서비스 기능을 정하기 전에
+실제 요양기관을 방문해 기관 관리자와 인터뷰를 진행했습니다.
 
-또한 개인정보를 다루는 서비스인 만큼
-권한과 데이터 관리에 대한 현장의 우려도 요구사항에 반영했습니다.
+현장에서 **상담 접수, 입소 가능 여부 확인, 보호자 응대,
+예약 관리, 리뷰 관리**가 어떤 방식으로 이루어지는지 들었습니다.
 
-### 들은 요구를 기능명으로만 옮기지 않았습니다
+또한 어르신과 보호자의 정보를 다루는 서비스인 만큼
+사용자 역할과 데이터 접근 범위를 어떻게 구분할지도 함께 검토했습니다.
 
-| 현장에서 확인한 요구 | 시스템에 반영한 기준 |
+### 인터뷰에서 확인한 문제를 시스템 규칙으로 바꿨습니다
+
+| 현장에서 확인한 내용 | 서비스에 반영한 기준 |
 |---|---|
-| 예약을 받은 뒤 기관에서 진행 상태를 관리해야 함 | `PENDING · CONFIRMED · COMPLETED · CANCELED` 상태와 전이 조건 정의 |
-| 기관장과 직원이 수행할 수 있는 업무가 다름 | OWNER / STAFF 역할별 접근 권한 분리 |
-| 가입이 끝나지 않은 사용자의 접근 범위를 제한해야 함 | 임시 인증 상태를 별도 Role로 모델링 |
-| 다양한 조건으로 기관을 비교하고 싶음 | 기관 유형·가격·전문 분야·거리 등을 검색 조건으로 분리 |
-| 기관 정보 변경이 추천 결과에도 반영되어야 함 | 기관 CRUD와 AI 임베딩 상태 동기화 |
+| 보호자가 기관마다 다른 정보를 직접 비교해야 함 | 기관 유형 · 전문 분야 · 위치 · 거리 · 가격 등을 공통 검색 조건으로 구성 |
+| 예약 접수 이후 진행 상태를 기관에서 관리해야 함 | `PENDING · CONFIRMED · COMPLETED · CANCELED` 상태와 전이 조건 정의 |
+| 기관 관리자와 직원의 담당 업무가 다름 | OWNER / STAFF 역할별 접근 범위 분리 |
+| 가입이 완료되지 않은 사용자의 접근을 제한해야 함 | 임시 가입 상태를 별도 Role로 관리 |
+| 기관의 프로그램과 특성을 알릴 수단이 필요함 | 기관 설명 태그와 홍보 관리 기능 구성 |
+| 기관 정보 변경이 추천 결과에도 반영되어야 함 | 기관 CRUD와 AI 임베딩 상태 연동 |
 
-> 요구사항을 **누가, 어떤 상태에서, 무엇을 할 수 있는가**의 문제로 바꾸어 설계했습니다.
+> 요구사항을 기능 이름으로 정리하는 데 그치지 않고  
+> **누가 어떤 상태에서 무엇을 할 수 있는지**까지 SW 규칙으로 구체화했습니다.
 
 ---
 
@@ -221,25 +237,25 @@ flowchart LR
 ### Team Lead · Backend · PO/PM
 
 4인 팀에서 팀장으로 참여해
-현장 요구사항과 서비스 흐름을 정리하고,
-프로젝트의 기능·설계 기준과 개발 일정을 조율했습니다.
+현장에서 확인한 요구사항과 서비스 흐름을 정리하고,
+기능·설계 기준과 프로젝트 일정을 조율했습니다.
 
-백엔드 개발에도 참여해 사용자·기관 업무 데이터를
-안정적으로 처리하기 위한 상태·권한·데이터 구조를 함께 다뤘습니다.
+백엔드 개발에도 참여하며
+사용자와 기관의 업무 흐름을 상태·권한·데이터 구조로 구체화했습니다.
 
 ### 주요 역할
 
-- 요양기관 현장 요구사항 정리
+- 요양기관 방문 및 현장 요구사항 정리
 - 사용자·기관 관리자 업무 흐름 구체화
-- 기능 우선순위 및 프로젝트 일정 조율
+- 기능 우선순위 및 일정 조율
 - API·데이터 구조·역할별 기능 기준 정리
 - Spring Boot 기반 Backend 개발 참여
-- Frontend·Backend·AI 서버 연동 기준 조율
+- Frontend · Backend · AI 연동 기준 조율
 - GitHub Issue / Pull Request 기반 협업
 - 프로젝트 발표 및 결과 정리
 
-> 세부 기술 구현은 팀 프로젝트 전체 코드 기준으로 설명하며,  
-> 개인 역할과 프로젝트 전체 구현을 구분해 작성했습니다.
+> 세부 기술 구현은 프로젝트 전체 코드 기준으로 설명하며,  
+> 개인 역할과 팀 전체 구현을 구분해 작성했습니다.
 
 ---
 
@@ -249,25 +265,26 @@ flowchart LR
 flowchart TB
     Mobile[React Native<br/>사용자 / 보호자 앱]
     Web[Vue<br/>기관 관리자 웹]
+
     Backend[Spring Boot Backend<br/>회원 · 기관 · 예약 · 리뷰 · 채팅 · 권한]
+
     DB[(PostgreSQL<br/>+ pgvector)]
+
     AI[FastAPI AI Server<br/>Embedding · Recommendation]
-    Cloud[AWS / Docker / Nginx]
 
     Mobile -->|REST API| Backend
     Web -->|REST API| Backend
+
     Backend --> DB
     Backend --> AI
     AI --> DB
-    Cloud --- Backend
-    Cloud --- AI
 ```
 
 ### Repository 구성
 
 | Repository | 역할 |
 |---|---|
-| [caring-backend](https://github.com/Caring-Team/caring-backend) | 회원·기관·예약·리뷰·채팅·권한 등 핵심 서버 로직 |
+| [caring-backend](https://github.com/Caring-Team/caring-backend) | 회원·기관·예약·리뷰·채팅·권한 등 서버 로직 |
 | [caring-front](https://github.com/Caring-Team/caring-front) | 사용자 모바일 애플리케이션 |
 | [caring-ai](https://github.com/Caring-Team/caring-ai) | 기관 임베딩 및 추천 로직 |
 
@@ -277,14 +294,11 @@ flowchart TB
 
 ### 6-1. 예약 상태와 변경 시각을 하나의 규칙으로 관리
 
-예약은 단순한 데이터가 아니라
-업무 진행 상황에 따라 상태가 변하는 도메인이었습니다.
+예약은 업무 진행 과정에 따라 상태가 계속 변하는 데이터였습니다.
 
-초기에는 Service에서 상태를 직접 변경할 수 있었지만,
-이 방식은 상태만 바꾸고 변경 시각을 빠뜨리거나
-허용되지 않은 상태 전이가 발생할 가능성이 있었습니다.
-
-상태 변경 규칙을 `Reservation` 엔티티 내부로 이동했습니다.
+상태만 변경하고 변경 시각을 빠뜨리거나,
+허용되지 않은 상태 전이가 발생하지 않도록
+상태 변경 규칙을 `Reservation` 내부에서 관리했습니다.
 
 ```java
 public void updateToConfirmed() {
@@ -315,42 +329,42 @@ stateDiagram-v2
 
 - 상태 변경과 변경 시각을 함께 관리
 - 허용하지 않는 상태 전이 차단
-- 상태 관련 업무 규칙을 엔티티 한곳에서 관리
+- 상태 관련 규칙을 한곳에서 관리
 
-> 상태를 값 하나가 아니라 **다음 동작을 결정하는 업무 규칙**으로 다뤘습니다.
+> 상태를 하나의 값이 아니라 **다음 동작을 결정하는 업무 규칙**으로 다뤘습니다.
 
 ---
 
 ### 6-2. 인증 중간 상태까지 Role로 모델링
 
-소셜 연동을 완료했지만
-회원가입에 필요한 정보 입력이 끝나지 않은 사용자가 존재했습니다.
+소셜 연동은 완료했지만
+회원가입 정보 입력이 끝나지 않은 사용자가 존재했습니다.
 
 이를 정식 회원과 동일하게 처리하면
-회원가입 완료 전에도 다른 API에 접근할 수 있습니다.
+가입 완료 전에도 다른 API에 접근할 수 있습니다.
 
-프로젝트에서는 인증 상태를 별도의 `UserDetails`와 Role로 표현했습니다.
+프로젝트에서는 중간 상태도 별도 Role로 표현했습니다.
 
-| UserDetails | 대상 | Role |
-|---|---|---|
-| `MemberDetails` | 가입 완료 보호자 | `ROLE_USER` |
-| `TemporaryUserDetails` | 소셜 연동 완료·가입 미완료 | `ROLE_TEMP_OAUTH` |
-| `InstitutionAdminDetails` | 기관 관리자 | `ROLE_INSTITUTION_OWNER / STAFF` |
-| `TemporaryInstitutionAdminDetails` | 기관 관리자 가입 미완료 | `ROLE_TEMP_INSTITUTION` |
-| `JwtUserDetails` | 공통 JWT 처리 | Token Role |
+| 사용자 상태 | 접근 제어 |
+|---|---|
+| 가입 완료 보호자 | `ROLE_USER` |
+| 소셜 연동 완료·가입 미완료 | `ROLE_TEMP_OAUTH` |
+| 기관 OWNER | OWNER 권한 |
+| 기관 STAFF | STAFF 권한 |
+| 기관 가입 미완료 | 임시 기관 Role |
 
-예를 들어 `ROLE_TEMP_OAUTH` 상태에서는
-회원가입 완료 API만 접근할 수 있도록 Security Layer에서 제한했습니다.
+임시 사용자는 회원가입에 필요한 기능만 사용할 수 있도록
+Security Layer에서 접근 범위를 제한했습니다.
 
 ---
 
-### 6-3. 다양한 기관 검색 조건을 독립적으로 관리
+### 6-3. 여러 기관 검색 조건을 독립적으로 관리
 
-기관 검색에는 이름 하나가 아니라
+기관 검색에는 기관명뿐 아니라
 기관 유형·전문 분야·가격·위치·거리 등 여러 조건이 사용됩니다.
 
-QueryDSL의 조건식을 각각 분리해
-필요한 조건만 조합할 수 있도록 구성했습니다.
+QueryDSL 조건식을 분리해
+필요한 검색 조건만 조합할 수 있도록 구성했습니다.
 
 ```java
 .where(
@@ -374,58 +388,40 @@ Haversine 계산을 활용했습니다.
 
 ## 7. 트러블 슈팅 🛠️
 
-### ⭐ 01. H2 테스트가 통과해도 실제 PostgreSQL에서는 같을까?
+### ⭐ 01. H2에서 통과해도 실제 PostgreSQL에서는 다를 수 있다
 
-> **테스트 환경의 편의보다 실제 실행 환경과의 일치도를 우선했습니다.**
+> **테스트 편의보다 실제 실행 환경과의 차이를 줄이는 것을 우선했습니다.**
 
 #### 🔴 Problem
 
 기관 거리 검색에는 Native Haversine Query와
-PostgreSQL에 의존하는 동작이 포함되어 있었습니다.
+PostgreSQL 환경에 의존하는 동작이 포함되어 있었습니다.
 
-H2에서는 이러한 동작을 실제 PostgreSQL과 동일하게 재현하기 어려웠습니다.
-
-따라서 H2에서 테스트가 통과하더라도
-실제 서비스 DB에서 같은 결과가 나온다고 보기 어려웠습니다.
+H2에서는 이를 실제 PostgreSQL과 동일하게 검증하기 어려웠습니다.
 
 #### 🔍 Decision
 
-통합 테스트도 실제 서비스와 같은 PostgreSQL에서 수행하기로 했습니다.
+통합 테스트도 실제 PostgreSQL을 사용하고,
+외부 서비스만 Mock으로 분리했습니다.
 
-외부 API만 Mock으로 분리해
-**DB 동작은 실제 환경에서, 외부 의존성은 통제된 환경에서** 확인했습니다.
+```text
+Integration Test
 
-#### 🟢 Solution
+실제 사용
+└─ PostgreSQL
 
-```java
-@DynamicPropertySource
-static void configureProperties(
-        DynamicPropertyRegistry registry) {
-
-    registry.add(
-        "spring.datasource.url",
-        () -> Optional
-            .ofNullable(System.getenv("TEST_DB_URL"))
-            .orElse(
-                "jdbc:postgresql://localhost:5432/caringdb"
-            )
-    );
-}
+Mock
+├─ Kakao Geocoding API
+└─ S3 등 외부 서비스
 ```
-
-| 실제 사용 | Mock으로 격리 |
-|---|---|
-| PostgreSQL | Kakao Geocoding API |
-| Repository | S3 등 외부 서비스 |
-| Service / Domain Logic | 네트워크 의존 기능 |
 
 #### ✅ Result
 
 - PostgreSQL Native Query 실제 동작 검증
-- 테스트 DB와 운영 DB 차이에서 발생할 수 있는 오류 감소
-- 외부 API 상태와 관계없이 반복 가능한 통합 테스트 구성
+- 테스트 DB와 실제 DB 차이에서 발생할 수 있는 오류 감소
+- 외부 서비스 상태와 관계없이 반복 가능한 통합 테스트 구성
 
-> **테스트하기 쉬운 환경보다 실제 환경에서 같은 결과가 나오는지를 더 중요하게 봤습니다.**
+> **실제 환경에서도 같은 결과가 나오는지를 검증 기준으로 삼았습니다.**
 
 ---
 
@@ -439,8 +435,8 @@ static void configureProperties(
 프로젝트는 데이터를 즉시 삭제하지 않고
 `deleted = true`로 상태를 변경하는 soft delete 정책을 사용했습니다.
 
-하지만 기관 삭제 과정에서 소속 관리자 데이터가
-논리 삭제가 아니라 DB에서 실제로 사라지는 문제가 발생했습니다.
+하지만 기관 삭제 과정에서 연관 데이터가
+논리 삭제가 아니라 DB에서 실제로 삭제되는 문제가 발생했습니다.
 
 #### Root Cause
 
@@ -449,9 +445,8 @@ cascade = CascadeType.ALL
 orphanRemoval = true
 ```
 
-`CascadeType.ALL`의 REMOVE 전파와
-`orphanRemoval=true`가 프로젝트의 soft delete 규칙보다 먼저
-물리 DELETE를 실행하고 있었습니다.
+REMOVE 전파와 `orphanRemoval` 설정이
+프로젝트의 soft delete 정책과 충돌하고 있었습니다.
 
 #### Solution
 
@@ -465,32 +460,23 @@ orphanRemoval = true
 
 - Cascade 범위를 `PERSIST`로 축소
 - `orphanRemoval` 비활성화
-- 삭제 전 연관관계 정리를 엔티티 내부 메서드로 캡슐화
+- 삭제 전 연관관계를 명시적으로 관리
 
-#### Learned
-
-공통 정책을 설계했더라도
-프레임워크 설정 하나가 실제 DB 동작을 바꿀 수 있었습니다.
-
-**코드의 의도뿐 아니라 DB에 남은 최종 결과까지 확인해야 했습니다.**
+> 코드의 의도뿐 아니라 **DB에 실제 어떤 결과가 남는지** 확인해야 했습니다.
 
 </details>
 
 ---
 
-### 03. 실제로 30일을 기다리지 않고 날짜 조건 검증하기
+### 03. 실제로 시간이 지나기를 기다리지 않고 날짜 조건 검증하기
 
 <details>
 <summary><b>상세 내용 펼쳐보기</b></summary>
 
 <br/>
 
-리뷰는 작성 이후 정해진 기간 동안만 수정할 수 있었습니다.
-
-하지만 테스트에서 생성된 리뷰는 항상 현재 시각을 갖기 때문에
-실제로 시간이 지나기를 기다릴 수는 없습니다.
-
-테스트 데이터의 `created_at`을 실제 PostgreSQL에서 과거 시점으로 변경했습니다.
+날짜에 따라 허용 여부가 달라지는 업무 규칙을 검증하기 위해
+테스트 데이터의 `created_at`을 PostgreSQL에서 과거 시점으로 변경했습니다.
 
 ```java
 entityManager.createNativeQuery(
@@ -505,44 +491,39 @@ entityManager.createNativeQuery(
 .executeUpdate();
 ```
 
-이를 통해 실제 DB 안에서 **31일이 지난 상태**를 만든 뒤
-날짜 기반 업무 규칙을 검증했습니다.
+실제 DB 안에서 과거 상태를 만든 뒤
+날짜 기반 규칙을 검증했습니다.
 
 </details>
 
 ---
 
-### 04. 상담 채팅의 현재 구조와 확장 한계
+### 04. 상담 채팅의 현재 구현
 
 <details>
 <summary><b>상세 내용 펼쳐보기</b></summary>
 
 <br/>
 
-현재 상담 채팅은 WebSocket이 아니라
-**Server-side Long Polling** 방식으로 구현했습니다.
+Caring의 상담 채팅 최종 구현은 **Long Polling** 방식입니다.
 
 ```mermaid
 sequenceDiagram
     participant C as Client
     participant S as Server
+
     C->>S: 신규 메시지 요청
-    loop 최대 대기 시간 동안
-        S->>S: 신규 메시지 확인
-    end
+
     alt 메시지 존재
         S-->>C: 메시지 반환
-    else Timeout
-        S-->>C: 빈 응답
+    else 일정 시간 동안 신규 메시지 없음
+        S-->>C: 응답 후 재요청
     end
-    C->>S: 다시 요청
 ```
 
-현재 구조는 기존 REST 환경을 활용할 수 있다는 장점이 있지만,
-동시 연결이 많아질 경우 요청 대기 중 Server Thread를 점유하는 한계가 있습니다.
-
 서비스 규모가 커질 경우
-WebSocket 또는 SSE와 같은 구조로 전환할 수 있습니다.
+WebSocket 또는 SSE 방식으로 전환할 수 있도록
+현재 구조의 한계도 함께 분석했습니다.
 
 </details>
 
@@ -550,9 +531,9 @@ WebSocket 또는 SSE와 같은 구조로 전환할 수 있습니다.
 
 ## 8. AI 추천 시스템 🤖
 
-### 사용자와 기관을 같은 벡터 공간에서 비교
+### 사용자와 기관 정보를 같은 벡터 공간에서 비교
 
-최종 구현에서는 사용자·어르신의 정보와 기관 정보를
+최종 구현에서는 사용자·어르신 정보와 기관 정보를
 텍스트로 구조화한 뒤 동일한 임베딩 모델로 벡터화했습니다.
 
 <p align="center">
@@ -563,12 +544,15 @@ WebSocket 또는 SSE와 같은 구조로 전환할 수 있습니다.
 
 ```mermaid
 flowchart LR
-    A[사용자·어르신 정보] --> B[bge-m3]
+    A[사용자 · 어르신 정보] --> B[bge-m3]
     C[기관 정보] --> B
+
     B --> D[1024차원 Embedding]
     D --> E[(PostgreSQL + pgvector)]
+
     E --> F[Cosine Similarity]
     F --> G[Top-5 기관]
+
     G --> H[LLM]
     H --> I[추천 사유 · 핵심 키워드]
 ```
@@ -577,21 +561,18 @@ flowchart LR
 
 - `bge-m3` 문장 임베딩
 - 1024차원 Vector
-- PostgreSQL `pgvector`
+- PostgreSQL + `pgvector`
 - Cosine Similarity
 - Top-5 기관 추출
 - 추천 사유 생성
 - LLM 기반 핵심 키워드 추출
 
----
+### 기관 정보와 AI 임베딩 상태 맞추기
 
-### 기관 데이터 변경과 AI 임베딩 상태 맞추기
+기관 정보가 변경됐는데 AI 서버의 임베딩이 그대로 남아 있으면
+업무 데이터와 추천 결과가 다른 상태를 바라보게 됩니다.
 
-기관 정보가 수정되었는데
-추천 서버의 기존 임베딩이 그대로 남아 있다면
-업무 데이터와 AI가 서로 다른 상태를 바라보게 됩니다.
-
-프로젝트에서는 기관 CRUD와 AI 임베딩 변경을 연결했습니다.
+프로젝트에서는 기관 CRUD와 AI 임베딩 변경 흐름을 연결했습니다.
 
 | 기관 변경 | Backend | AI Server |
 |---|---|---|
@@ -599,18 +580,8 @@ flowchart LR
 | **수정** | 기관 정보 변경 | Embedding 갱신 |
 | **삭제** | 기관 삭제 처리 | Embedding 삭제 |
 
-AI 서버 호출은 다른 외부 API와 구분해
-전용 `RestTemplate`으로 관리했습니다.
-
-```java
-@Qualifier("aiServerRestTemplate")
-```
-
-별도의 연결·읽기 timeout과 Error Handler를 두어
-AI 서버 연동 설정을 독립적으로 관리했습니다.
-
-> AI 기능도 운영 시스템 안에서는 하나의 외부 구성요소이므로,  
-> **업무 데이터와 AI 데이터의 상태를 함께 맞추는 것이 중요했습니다.**
+> AI 기능도 운영 시스템 안에서는 하나의 연결된 구성요소이므로  
+> **업무 데이터 변경과 연결 시스템의 상태를 함께 고려했습니다.**
 
 ---
 
@@ -622,32 +593,29 @@ AI 서버 연동 설정을 독립적으로 관리했습니다.
 flowchart LR
     A[Integration Test] --> B[Service / Domain]
     B --> C[Repository]
-    C --> D[(실제 PostgreSQL)]
+    C --> D[(PostgreSQL)]
 
     A -. Mock .-> E[Kakao API]
-    A -. Mock .-> F[S3 / 외부 서비스]
+    A -. Mock .-> F[S3 / External]
 ```
 
-특히 다음 영역을 실제 PostgreSQL 환경에서 확인했습니다.
+다음 영역을 실제 PostgreSQL 환경에서 확인했습니다.
 
 - Native Haversine Query
 - 예약 상태 전이
 - 역할별 접근 권한
-- soft delete 동작
-- 날짜 기반 비즈니스 규칙
+- Soft Delete
+- 날짜 기반 업무 규칙
 - 실제 저장·변경 결과
 
-### 상태 값뿐 아니라 변경 시각까지 확인
+### 상태와 변경 시각을 함께 관리
 
-| 상태 | 함께 관리하는 정보 |
+| 상태 | 함께 기록되는 정보 |
 |---|---|
 | `PENDING` | 예약 최초 상태 |
 | `CONFIRMED` | `confirmedAt` |
 | `CANCELED` | `canceledAt` |
 | `COMPLETED` | `completedAt` |
-
-상태 자체만 변경하는 것이 아니라
-**언제 어떤 상태가 되었는지 추적할 수 있도록 함께 관리**했습니다.
 
 ---
 
@@ -663,19 +631,16 @@ flowchart LR
 | **Web** | Vue |
 | **AI** | Python · FastAPI · bge-m3 · LLM |
 | **Infrastructure** | AWS · Docker · Nginx |
-| **Collaboration** | GitHub Issues · Branch · Pull Request · Code Review |
+| **Collaboration** | GitHub Issue · Branch · Pull Request · Code Review |
 
 > 기술 구성은 **프로젝트 전체 기준**입니다.
 
 ### Issue-based Development
 
-기능 개발, 버그 수정, 리팩토링은
-GitHub Issue 단위로 관리했습니다.
-
 ```mermaid
 flowchart LR
-    A[Issue 생성] --> B[Branch 생성]
-    B --> C[개발]
+    A[Issue] --> B[Branch]
+    B --> C[Development]
     C --> D[Pull Request]
     D --> E[Code Review]
     E --> F[Merge]
@@ -688,38 +653,19 @@ Backend · Frontend · AI를 별도 Repository로 분리하고,
 
 ## 11. 성과 🏆
 
-### 🥈 컴퓨터공학과 2025학년도 2학기 학술제 2등
+### 🏆 프로젝트 수상 2회
 
-AI 기반 맞춤 기관 추천과
-기관 탐색부터 상담·예약까지 연결한 서비스 흐름,
-서비스 확장 가능성을 발표해 학술제 2등을 수상했습니다.
+Caring은 실제 사용자·기관 흐름을 연결한 구현 결과와
+서비스 활용 가능성을 인정받아 두 차례 수상했습니다.
 
-### 🏅 창의설계경진대회 인기상
-
-실제 현장 요구를 반영한 사용자 앱과 기관 관리자 웹,
-기관 검색·추천·상담·예약 기능의 완성도를 인정받아 수상했습니다.
+- **컴퓨터공학과 2025학년도 2학기 학술제 2등**
+- **창의설계경진대회 인기상(4등)**
 
 <p align="center">
-  <img src="./assets/award-photo-03.jpg"
-       alt="Caring 프로젝트 수상"
-       width="600"/>
+  <img src="./assets/award-photo-main.jpg"
+       alt="Caring 창의설계경진대회 수상"
+       width="620"/>
 </p>
-
-### 📜 프로그램 저작물 등록 2건
-
-| 구분 | 한국저작권위원회 등록번호 |
-|---|---|
-| **Caring 서비스** | `C-2025-060193` |
-| **Caring AI 기능** | `C-2026-002599` |
-
-### 🗃️ SW자산뱅크 등재
-
-프로젝트 결과물을 공식 SW 자산으로 남기기 위해
-SW자산뱅크 등재까지 진행했습니다.
-
-**등록번호**
-
-`ASSET_0015923`
 
 <details>
 <summary><b>프로젝트 전시 현장 보기</b></summary>
@@ -736,14 +682,49 @@ SW자산뱅크 등재까지 진행했습니다.
 
 ---
 
+### 📜 한국저작권위원회 프로그램 저작물 등록 2건
+
+프로젝트 결과물을 SW 산출물로 남기기 위해
+서비스와 AI 기능을 각각 프로그램 저작물로 등록했습니다.
+
+| 등록 대상 | 등록번호 |
+|---|---|
+| **Caring 서비스** | `C-2025-060193` |
+| **Caring AI 기능** | `C-2026-002599` |
+
+아래 이미지는 Caring 프로그램 저작물 등록 절차의 실제 접수 화면입니다.
+
+<p align="center">
+  <img src="./assets/copyright-registration.png"
+       alt="Caring 한국저작권위원회 저작물 등록 접수"
+       width="850"/>
+</p>
+
+---
+
+### 🗃️ SW자산뱅크 등재
+
+프로젝트 결과물을 공식 SW 자산으로 남기기 위해
+SW자산뱅크 등재까지 진행했습니다.
+
+**등록번호 `ASSET_0015923`**
+
+<p align="center">
+  <img src="./assets/sw-asset-bank.png"
+       alt="Caring SW자산뱅크 등재"
+       width="850"/>
+</p>
+
+---
+
 ## 12. What I Learned 💭
 
-이 프로젝트에서 가장 크게 배운 것은
+Caring에서 가장 크게 배운 것은
 **사용자가 말한 요구사항을 기능 이름으로 옮기는 것만으로는 충분하지 않다**는 점입니다.
 
-실제 요양기관의 업무 절차를 확인하면서
-같은 기능도 사용자와 현재 상태에 따라
-허용되는 동작이 달라진다는 것을 알게 됐습니다.
+실제 기관의 업무 절차를 확인하면서
+사용자와 현재 상태에 따라 허용되는 동작과
+남겨야 하는 데이터가 달라진다는 것을 확인했습니다.
 
 그래서 이후에는 요구사항을 받으면 다음 기준부터 확인합니다.
 
@@ -759,7 +740,7 @@ SW자산뱅크 등재까지 진행했습니다.
 
 예약 상태 전이, 역할별 권한,
 PostgreSQL 통합 테스트와 AI 서버 연동은
-이 기준을 실제 코드와 테스트로 구체화하는 과정이었습니다.
+이 기준을 실제 시스템에 적용하는 과정이었습니다.
 
 > ### 요구사항을 **상태·권한·인터페이스·완료 기준으로 구체화하고, 실제 환경에서 검증하는 개발자**
 >
