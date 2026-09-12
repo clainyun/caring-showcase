@@ -210,6 +210,16 @@ flowchart LR
 서비스 기능을 정하기 전에
 실제 요양기관을 방문해 기관 관리자와 인터뷰를 진행했습니다.
 
+<p align="center">
+  <img src="./assets/institution-interview.png"
+       alt="Caring 요양기관 현장 인터뷰"
+       width="850"/>
+</p>
+
+<p align="center">
+  <sub>실제 요양기관을 방문해 기관 관리자와 업무 절차와 현장의 불편을 확인했습니다.</sub>
+</p>
+
 현장에서 **상담 접수, 입소 가능 여부 확인, 보호자 응대,
 예약 관리, 리뷰 관리**가 어떤 방식으로 이루어지는지 들었습니다.
 
