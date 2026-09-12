@@ -10,6 +10,18 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/Caring-Team/caring-backend">
+    <img src="https://img.shields.io/badge/Backend-Source%20Code-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+  <a href="https://github.com/Caring-Team/caring-front">
+    <img src="https://img.shields.io/badge/Frontend-Source%20Code-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+  <a href="https://github.com/Caring-Team/caring-ai">
+    <img src="https://img.shields.io/badge/AI-Source%20Code-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/Java-Spring%20Boot-6DB33F?logo=springboot&logoColor=white"/>
   <img src="https://img.shields.io/badge/PostgreSQL-pgvector-4169E1?logo=postgresql&logoColor=white"/>
   <img src="https://img.shields.io/badge/React%20Native-Mobile-61DAFB?logo=react&logoColor=black"/>
