@@ -410,18 +410,18 @@ Haversine 계산을 활용했습니다.
 
 ## 7. 트러블 슈팅 🛠️
 
-### ⭐ 01. H2에서 통과해도 실제 PostgreSQL에서는 다를 수 있다
+## ⭐ 01. H2에서 통과해도 실제 PostgreSQL에서는 다를 수 있다
 
 > **테스트 편의보다 실제 실행 환경과의 차이를 줄이는 것을 우선했습니다.**
 
-#### 🔴 Problem
+### 🔴 Problem
 
 기관 거리 검색에는 Native Haversine Query와
 PostgreSQL 환경에 의존하는 동작이 포함되어 있었습니다.
 
 H2에서는 이를 실제 PostgreSQL과 동일하게 검증하기 어려웠습니다.
 
-#### 🔍 Decision
+### 🔍 Decision
 
 통합 테스트도 실제 PostgreSQL을 사용하고,
 외부 서비스만 Mock으로 분리했습니다.
@@ -437,7 +437,7 @@ Mock
 └─ S3 등 외부 서비스
 ```
 
-#### ✅ Result
+### ✅ Result
 
 - PostgreSQL Native Query 실제 동작 검증
 - 테스트 DB와 실제 DB 차이에서 발생할 수 있는 오류 감소
