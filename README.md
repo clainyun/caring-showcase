@@ -567,6 +567,21 @@ flowchart LR
     H --> I[추천 사유 · 핵심 키워드]
 ```
 
+### 추천 결과를 벡터 공간에서도 확인
+
+사용자와 기관의 임베딩이
+어떤 위치 관계와 유사도를 가지는지 시각화해 결과를 확인했습니다.
+
+<p align="center">
+  <img src="./assets/embedding-similarity-visualization.png"
+       alt="Caring 임베딩 유사도 시각화"
+       width="850"/>
+</p>
+
+<p align="center">
+  <sub>사용자와 기관 정보를 동일한 임베딩 공간에 배치하고 cosine similarity 기준의 추천 순위를 확인한 예시입니다.</sub>
+</p>
+
 ### 최종 구현
 
 - `bge-m3` 문장 임베딩
